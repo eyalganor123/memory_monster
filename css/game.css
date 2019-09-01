@@ -1,0 +1,252 @@
+@media  (min-width: 601px) {
+  html,
+body {
+  margin: 0;
+  background-color: black;
+  
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+  .header {
+    background-color: lightblue;
+    padding: 20px;
+    border-bottom: 10px solid darkcyan;
+    color: darkcyan;
+    font-size: 1.5em;
+    text-align: center;
+    line-height:50px;
+  }
+  .header img {
+    float: right;
+  }
+  .userName {
+    background-color: rgb(43, 224, 209);
+    text-align: center;
+    margin-top: 0;
+    line-height: 200%;
+    color: rgb(99, 99, 99);
+    font-size:1.8em;
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+  
+  #highScore {
+    /* display:none; */
+    position: fixed;
+    left:5%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 153, 0);
+    width: 10%;
+    padding: 20px;
+    line-height:30px;
+    font-size: 1em;
+    border:1px solid orange;
+  }
+  #timer {
+    position: fixed;
+    left: 70%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 248, 103);
+    width: 13%;
+    padding: 10px;
+  line-height:10px;
+  font-size: 30px;
+  border:1px solid orange;
+  }
+  .messege {
+    font-size: .8em;
+    position: fixed;
+   top: 27%;
+    left: 35%;
+    text-align: center;
+    line-height: 20px;
+    width: 30%;
+  }
+  .goHome {
+    text-align: center;
+    position: fixed;
+    left: 40%;
+    top: 90%;
+    font-size: 2em;
+    line-height: 151%;
+    border: 1px solid black;
+  }
+  .container {
+    display:flex;
+    flex-wrap: wrap;
+    position: fixed;
+  left:230px;
+  top: 60%;
+    width: 70%;
+    height: 20%;
+    background-color:rgb(0, 0, 0);
+  }
+ 
+  #again {
+    display: none;
+    position: relative;
+    top: 70%;
+    left: 42%;
+  
+    width: 140px;
+    line-height: 90px;
+    border-radius: 20px;
+    background-color: rgb(255, 60, 0);
+    border: 1px solid black;
+  }
+  a {
+    width: 160px;
+    margin: 4px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    color: orange;
+    text-decoration: none;
+  } 
+
+
+
+  
+  .card {
+    background-color: pink;
+    height: 165px;
+    width: 165px;
+    float: left;
+    margin: 5px;
+  }
+  
+  .card img {
+    position: absolute;
+  }
+  
+  .flipped .back {
+    display: none;
+  }
+}
+@media  (min-width: 0px) {
+  html,
+body {
+  margin: 0;
+  background-color: black;
+  
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+  .header {
+    background-color: lightblue;
+    padding: 20px;
+    border-bottom: 10px solid darkcyan;
+    color: darkcyan;
+    font-size: 1.5em;
+    text-align: center;
+    line-height:50px;
+  }
+  .header img {
+    float: right;
+  }
+  .userName {
+    background-color: rgb(43, 224, 209);
+    text-align: center;
+    margin-top: 0;
+    line-height: 200%;
+    color: rgb(99, 99, 99);
+    font-size:1.8em;
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+  
+  #highScore {
+    /* display:none; */
+    position: fixed;
+    left:5%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 153, 0);
+    width: 10%;
+    padding: 20px;
+    line-height:30px;
+    font-size: 1em;
+    border:1px solid orange;
+  }
+  #timer {
+    position: fixed;
+    left: 70%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 13%;
+    padding: 10px;
+  line-height:10px;
+  font-size: 1em;
+  border:1px solid orange;
+  text-align: center;
+  }
+  .messege {
+    font-size: .8em;
+    position: relative;
+   top: 13%;
+    left: 35%;
+    text-align: center;
+    line-height: 20px;
+    width: 30%;
+    color:rgba(177, 177, 177, 0.781);
+  }
+  .goHome {
+    text-align: center;
+    position: fixed;
+    left: 45%;
+    top: 0%;
+    font-size: .6em;
+    line-height: 15%;
+    border: 1px solid black;
+    padding:10px;;
+  }
+  .container {
+    display:flex;
+    /* position: relative; */
+    /* justify-items: center; */
+  left:30%;
+  top: 50%; 
+    width: 600px;
+    height: 400px;
+    background-color:rgb(0, 0, 0);
+  }
+ 
+  #again {
+    display: none;
+    position: relative;
+    top: 600px;
+    left: 42%;
+  
+    width: 140px;
+    line-height: 90px;
+    border-radius: 20px;
+    background-color: rgb(255, 222, 124);
+    border: 1px solid black;
+  }
+  a {
+    width: 160px;
+    margin: 4px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    color: orange;
+    text-decoration: none;
+  font-size: 1px;
+  } 
+
+
+
+  
+  .card {
+    background-color: pink;
+    height: 165px;
+    width: 165px;
+    float: left;
+    margin: 5px;
+  }
+  
+  .card img {
+    position: absolute;
+  }
+  
+  .flipped .back {
+    display: none;
+  }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HomePage</title>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <img id="pic" src="./img/homepage//eyal123.jpg" alt="" width="400px" ; />
+
+    <div class="container"></div>
+    <div class="image"></div>
+    <div class="text">
+        <iframe  id="movie" src="https://player.vimeo.com/video/296397300" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+      <iframe
+        src="https://450856.playcode.io"
+        id="frame"
+        name="myFrame"
+        height="1000"
+        style="border: none; display:none;"
+      ></iframe>
+      <h1 id="title">EYAL GANOR</h1>
+      <h3 id="name">Web Development</h3>
+    </div>
+    <div class="navcontainer">
+      <div
+        class="nav"
+        id="about"
+        onmouseover="show('name','אהיה אשר אהיה')"
+        onmouseout="show(0)"
+      >
+        About
+      </div>
+      <div
+        class="nav"
+        id="hobbies"
+        onmouseover="show('name',getHobbies())"
+        onmouseout="show(0)"
+        onclick="showMovie()"
+      >
+        Hobbies
+      </div>
+      <div
+        href=""
+        class="nav"
+        id="github"
+        onmouseover="show('name','GIThub')"
+        onmouseout="show(0)"
+        onclick="showApp();"
+
+      >
+        GitHub
+      </div>
+      <a
+        href="./game.html"
+        class="nav"
+        id="togame"
+        onmouseover="show('name','Memory Monster')"
+        onmouseout="show(0)"
+        onclick="showPic();"
+      >
+        Memory Monster
+      </a>
+      <a
+        href="mailto:eyalganor@gmail.com"
+        class="nav"
+        id="contact"
+        onmouseover="show('name','eyalganor@gmail.com')"
+        onmouseout="show(0)"
+      >
+        Contact
+      </a>
+    </div>
+    <hr />
+    <video id="audioplayer" controls="" autoplay="" name="media">
+      <source
+        src="http://www.hochmuth.com/mp3/Haydn_Cello_Concerto_D-1.mp3"
+        type="audio/mpeg"
+      />
+    </video>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
