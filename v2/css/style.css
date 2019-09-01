@@ -1,0 +1,68 @@
+body{
+  font-family: Roboto;
+  font-size: 12px;
+}
+
+a{
+	text-decoration: none;
+	color: #4a4a44;
+	text-transform: capitalize;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+header, footer, main {
+  padding: 0 16px;
+}
+
+header {
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  justify-content: space-between;
+}
+
+header .logo{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+header ul{
+  display: flex;
+  justify-content: space-between;  
+}
+
+header nav {
+  width: 400px;  
+}
+
+header,
+footer {
+	height: 50px;
+	display: flex;
+  align-items: center;
+}
+
+main {
+	height: calc(100% - 100px);
+	width: 70%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main section img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	box-shadow: 1px 1px 10px #ccc;
+}
+
+@media (max-width: 1024px) {
+	main {
+		width: calc(100% - 32px);
+	}
+}
