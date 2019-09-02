@@ -1,50 +1,55 @@
 var state = {
-  appIsOpen: false,
-  movieIsOpen: false
-}
-var hobbies = ["music", "drawing", "being creative"];
-function show(i, text) {
-  if (i == 0) {
-    document.getElementById("name").innerHTML = "Web Development";
-    document.getElementById("title").innerHTML = "EYAL GANOR";
-    return;
-  }
-  document.getElementById(i).innerHTML = "";
-  document.getElementById("name").innerHTML = text;
+  pizza: false
 }
 
-function getHobbies() {
-  var target = document.getElementById("name");
-  var ul = document.createElement("ul");
-  for (i = 0; i < hobbies.length; i++) {
-    var li1 = document.createElement("li");
-    li1.innerHTML = hobbies[i];
-    ul.appendChild(li1);
-  }
-  target.appendChild(ul);
+function showAbout() {
+  var text = `"Sweet dreams are made of this <br><br>Who am I to disagree<br><br>I travel the world <br><br>And the seven seas, <br><br>Everybody's looking for something. "`;
+  var about = document.getElementById('info');
+  about.innerHTML = text;
 
-  return ul.innerHTML;
 }
-function showApp() {
-  var frame = document.getElementById("frame");
-  if (state.appIsOpen === false) {
-    frame.setAttribute('style', 'display:block');
-    state.appIsOpen=true;
+
+function showContact() {
+
+  about = document.getElementById('info');
+  about.innerHTML = "Contact Me: <br><br>tel: +972-544-512735<br><br>";
+  var git = document.createElement('a');
+  git.innerHTML = ` https://github.com/eyalganor123 <br><br>`;
+  git.setAttribute("href", "https://github.com/eyalganor123")
+  about.appendChild(git);
+  var email = document.createElement('a');
+  email.innerHTML = 'eyalganor@gmail.com';
+  email.setAttribute("href", "mailto:eyalganor@gmail.com")
+  about.appendChild(email);
+}
+
+function showHobbies() {
+  var text = `music <br><br>drawing<br><br>travelling the world.`;
+  about = document.getElementById('info');
+  about.innerHTML = text;
+}
+
+function getPizza() {
+  var pizza = document.getElementById('pizza');
+  var pizzaButton = document.getElementById('pizzaButton');
+  if (state.pizza === false) {
+    pizza.setAttribute('style', 'display: block');
+    pizzaButton.innerHTML = 'clean up'
+    state.pizza = true;
   }
   else {
-    frame.setAttribute('style', 'display:none');
-    state.appIsOpen=false;
+    pizza.setAttribute('style', 'display: none');
+    pizzaButton.innerHTML = 'get pizza'
+    state.pizza = false;
   }
-};
-function showMovie() {
-  var movie = document.getElementById("movie");
-  if (state.movieIsOpen === false) {
-    movie.setAttribute('style', 'display:block');
-    state.movieIsOpen=true;
-  }
-  else {
-    movie.setAttribute('style', 'display:none');
-    state.movieIsOpen=false;
-  }
-  
 }
+
+setInterval(function () {
+  var d = new Date().toLocaleTimeString();
+  document.getElementById("time").innerHTML = d;
+}, 1000);
+
+
+
+
+// to do: connect to actual location and weather 

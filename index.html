@@ -4,81 +4,77 @@
     <meta charset="UTF-8" />
     <title>HomePage</title>
     <link rel="stylesheet" href="/css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Thasadith"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <img id="pic" src="./img/homepage//eyal123.jpg" alt="" width="400px" ; />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-    <div class="container"></div>
-    <div class="image"></div>
-    <div class="text">
-        <iframe  id="movie" src="https://player.vimeo.com/video/296397300" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-      <iframe
-        src="https://450856.playcode.io"
-        id="frame"
-        name="myFrame"
-        height="1000"
-        style="border: none; display:none;"
-      ></iframe>
-      <h1 id="title">EYAL GANOR</h1>
-      <h3 id="name">Web Development</h3>
-    </div>
+    <button id="pizzaButton" onclick="getPizza();">get pizza</button>
     <div class="navcontainer">
-      <div
-        class="nav"
-        id="about"
-        onmouseover="show('name','אהיה אשר אהיה')"
-        onmouseout="show(0)"
-      >
+      <div class="nav" id="about" onclick="showAbout()">
         About
       </div>
-      <div
-        class="nav"
-        id="hobbies"
-        onmouseover="show('name',getHobbies())"
-        onmouseout="show(0)"
-        onclick="showMovie()"
-      >
+      <div class="nav" id="hobbies" onclick="showHobbies()">
         Hobbies
       </div>
-      <div
-        href=""
+      <a
+        href="https://github.com/eyalganor123"
+        target="blank"
         class="nav"
         id="github"
-        onmouseover="show('name','GIThub')"
-        onmouseout="show(0)"
-        onclick="showApp();"
-
       >
         GitHub
-      </div>
-      <a
-        href="./game.html"
-        class="nav"
-        id="togame"
-        onmouseover="show('name','Memory Monster')"
-        onmouseout="show(0)"
-        onclick="showPic();"
-      >
+      </a>
+      <a href="./game.html" class="nav" id="togame">
         Memory Monster
       </a>
-      <a
-        href="mailto:eyalganor@gmail.com"
-        class="nav"
-        id="contact"
-        onmouseover="show('name','eyalganor@gmail.com')"
-        onmouseout="show(0)"
-      >
-        Contact
-      </a>
+      <div class="nav" id="contact" onclick="showContact()">
+        Contact Me
+      </div>
     </div>
     <hr />
-    <video id="audioplayer" controls="" autoplay="" name="media">
-      <source
-        src="http://www.hochmuth.com/mp3/Haydn_Cello_Concerto_D-1.mp3"
-        type="audio/mpeg"
-      />
-    </video>
+
+    <ul class="list">
+      CURRENT
+      <span style="color:rgb(230, 168, 33)">ACTIVE</span>
+      PROJECTS
+      <li>memory monsters</li>
+      <li>gihub users list app</li>
+      <li>snake</li>
+      <li>homepage</li>
+    </ul>
+    <table id="table" border="0">
+      <tr>
+        <th>location</th>
+        <th>current temperture</th> 
+        <th id="timeTable">time</th>
+      </tr>
+      <tr>
+        <th>TEL AVIV</th>
+        <th>34°c</th>
+        <th id="time">00:00:00</th>
+      </tr>
+    </table>
+
+    <div class="text">
+      <h1 id="title">EYAL GANOR</h1>
+      <img id="pic" src="./img/homepage//eyal123.jpg" alt="" width="100px" ; />
+
+      <h3 id="name">Web Development</h3>
+    </div>
+
+    <div id="info">
+      "Sweet dreams are made of this <br /><br />
+      Who am I to disagree <br /><br />
+      I travel the world <br /><br />
+      And the seven seas, <br /><br />
+      Everybody's looking for something. "<br /><br />
+    </div>
+    <img id="pizza" src="./img/homepage/pizza.jpg" />
+
     <script src="/js/index.js"></script>
   </body>
 </html>
